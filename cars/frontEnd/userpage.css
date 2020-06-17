@@ -1,0 +1,543 @@
+:root {
+    --gradient: radial-gradient( #F5F5F5 50%, #00000080 100%);
+    --long: 0.7s;
+    --short: 0.2s;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    color: gray;
+    background-color: rgba(0, 0, 0, 0.479);
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/garage-high-res-stock-photography-1574439186.jpg);
+    background-position: center;
+    background-size:cover;
+    background-blend-mode:soft-light;
+    width: 1200px;
+    height: 600px;
+    background-repeat: none;
+    /* position:absolute; */
+    /* top:0px; bottom:0px; right:0px; left:0px; */
+  }
+
+a:link, a:visited {
+    color: gray;
+    text-decoration: none;
+}
+  
+a:link:hover, a:visited:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+#greeting {
+    text-align: center;
+    color: black;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: -1px 2px 5px rgba(0, 0, 0, 0.432);
+}
+
+#garage {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(160, 160, 160);
+    text-shadow: -1px 2px 5px rgba(0, 0, 0, 0.432);
+
+}
+#search-for-car {
+    justify-content: left;
+}
+
+#rotate-section {
+    text-align: center;
+}
+
+#rotate {
+    font-size: 10px;
+    box-shadow: -20px 30px 40px #00000080;
+
+}
+
+#car-search-stuff {
+    transform: translate(320%);
+    width: 300px;
+}
+
+#results {
+    position: absolute;
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgba(165, 113, 113, 0.76);
+    font-size: 14;
+    background-color: rgba(0, 0, 0, 0.637);
+    width: 100%;
+    /* border-radius: 10%; */
+    box-shadow: -20px 30px 40px #000000a9;
+    z-index: 3;
+    transition: var(--long);
+
+}
+
+.clear {
+    position: absolute;
+    transform: translate(210px);
+    cursor: pointer;
+    font-size: 13px;
+}
+
+
+#card-fader {
+    animation: fader 3.0s forwards;
+    animation-duration: 1.5s;
+    width: 80%;
+}
+
+@keyframes fader {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity:0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+#car-card-container {
+    margin-top: 80px;
+    margin-left: 100px;
+    padding-top: 75px;
+    padding-left: 75px;
+    /* box-sizing: border-box; */
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    width: 700px;
+    height: 300px;
+    
+    
+    display: flex;
+    /* flex-direction: row; */
+}
+
+
+.car-card {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
+    width: 550px;
+    height: 373px;
+    background-color: black;
+    border-radius: 25px;
+    display: grid;
+    grid-template-rows: auto 100px;
+    box-shadow: -20px 30px 40px #00000080;
+    position: absolute;
+    overflow: hidden;
+    transition: transform 300ms;
+    
+}
+
+
+
+.image-box {
+    width: 550px;
+    position: relative;
+
+}
+
+.remove-car {
+    margin: 0px;
+    height: 25px;
+    width: 25px;
+    background: radial-gradient(farthest-corner at 30px 5px, #F5F5F5 50%, #00000080 100%);
+    border-radius: 50%;
+    z-index: 2;
+    font-size: 19px;
+    padding-left: 7px;
+    box-sizing: border-box;
+    color: #5F6670;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+    left: 510px;
+    top: 10px;
+    box-shadow: -3px 3px 8px 1px #00000080;
+    transition: var(--short);
+
+}
+
+.remove-car:hover {
+    transform: scale(1.2);
+    color: rgb(194, 29, 29);
+    background: radial-gradient(farthest-corner at 30px 5px, #F5F5F5 50%, rgba(70, 10, 10, 0.699) 100%);
+    box-shadow: -3px 3px 7px rgba(37, 6, 6, 0.849);
+    text-shadow: -1px 2px 5px rgba(194, 29, 29, 0.432);
+
+}
+
+.car-image {
+    position: absolute;
+    height: 100%;
+    left: -10%;
+    top: -10%;
+    transition: var(--long);
+}
+
+#four-runner-pic {
+    position: absolute;
+    height: 100%;
+    left: -10%;
+    top: -10%;
+    transition: var(--long);
+}
+
+.bottom {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 550px;
+    height: 60px;
+    top: 40%;
+    position: relative;
+    background-color: rgb(160, 163, 168);
+    color: #cdcdcd;
+    transition: var(--long);
+}
+
+.outback {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 550px;
+    height: 60px;
+    top: 40%;
+    position: relative;
+    background-color: #484e21;
+    color: #cdcdcd;
+    transition: var(--long);
+}
+
+.four-runner {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 550px;
+    height: 60px;
+    top: 40%;
+    position: relative;
+    background-color: #0864c0;
+    color: #cdcdcd;
+    transition: var(--long);
+}
+
+.accord{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 550px;
+    height: 60px;
+    top: 40%;
+    position: relative;
+    background-color: #9e1310;
+    color: #cdcdcd;
+    transition: var(--long);
+}
+
+
+
+.car-name {
+    font-weight: bold;
+    margin-top: 3px;
+    font-size: 20px;
+    line-height: 20px;
+    z-index: 1;
+    transition: var(--long);
+
+}
+
+.car-type {
+    margin-top: 2px;
+    font-size: 16px;
+    line-height: 16px;
+    z-index: 1;
+    transition: var(--long);
+
+}
+
+.car-info {
+    margin: 0px;
+    position: relative;
+    left: -10%;
+    transform: translateY(-10%);
+    font-size: 25px;
+    line-height: 45px;
+    z-index: 1;
+    transition: var(--long);
+}
+
+.more-info {
+    
+    margin: 0px;
+    font-size: 25px;
+    position: relative;
+    top: -10px;
+    left: -140px;
+}
+
+.btn {
+    padding-top: 8px;
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background: radial-gradient(farthest-corner at 40px -10px, rgb(245, 245, 245) 50%, #00000079 100%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    color: #fff; 
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: -3px 2px 8px 2px #00000080;
+    transition: var(--long);
+}
+
+.btn:hover {
+    width: 100px;
+    height: 12px;
+    transform: translate(-50%, -70%);
+    opacity: 1;
+    box-shadow: -7px 5px 10px #000000a8;
+    transition-duration: var(--long);
+}
+
+.btn-text {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    transition: var(--long);
+}
+
+
+.cardback {
+    padding: 20px;
+    position: absolute;
+    background-color: transparent;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    transition: var(--long);
+}
+
+.car-card:nth-last-child(n + 4) {
+    --y: calc(-25% + -55px);
+    transform: translate(calc(10% - 135px), var(--y)) scale(0.9);
+    
+}
+.car-card:nth-last-child(3) {
+    --y: calc(-25% + -40px);
+    transform: translate(calc(20% - 135px), var(--y)) scale(0.95);
+
+}
+.car-card:nth-last-child(2) {
+    --y: calc(-25% - 25px);
+    transform: translate(calc(35% - 135px), var(--y)) scale(1);
+   
+}
+.car-card:nth-last-child(1) {
+    --y: calc(-25% - 5px);
+    transform: translate(calc(50% - 135px), var(--y)) scale(1.05);
+   
+}
+
+.car-card:nth-last-child(4):hover {
+    --y: calc(-25% + -55px);
+    transform: translate(calc(-10% - 135px), calc(var(--y) - 50px)) scale(0.9) rotate(10deg);
+}
+
+.car-card:nth-last-child(4):hover .car-name {
+    transform: translate(-110%);
+    animation-timing-function: ease-out;
+}
+
+.car-card:nth-last-child(4):hover .car-type {
+    transform: translate(-110%);
+    animation-timing-function: ease-out;
+}
+
+.car-card:nth-last-child(3):hover {
+    --y: calc(-25% + -40px);
+    transform: translate(calc(0% - 135px), calc(var(--y) - 50px)) scale(0.95) rotate(10deg);
+}
+
+.car-card:nth-last-child(3):hover .car-name {
+    transform: translate(-110%);
+    animation-timing-function: ease-out;
+}
+
+.car-card:nth-last-child(3):hover .car-type {
+    transform: translate(-110%);
+    animation-timing-function: ease-out;
+}
+
+.car-card:nth-last-child(2):hover {
+    --y: calc(-25% - 25px);
+    transform: translate(calc(15% - 135px), calc(var(--y) - 50px)) scale(1) rotate(10deg);
+}
+
+.car-card:nth-last-child(2):hover .car-name {
+    transform: translate(-110%);
+    animation-timing-function: ease-out;
+}
+
+.car-card:nth-last-child(2):hover .car-type {
+    transform: translate(-110%);
+    animation-timing-function: ease-out;
+}
+
+.car-card:nth-last-child(1):hover {
+    --y: calc(-25% - 5px);
+    transform: translate(calc(50% - 135px), var(--y)) scale(1.12);
+}
+
+
+
+@keyframes idleCards {
+    25% {
+        transform: translateY(-3px);
+        animation-timing-function: ease-out;
+    }
+    75% {
+        transform: translateY(6px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        animation-timing-function: ease-in;
+    }
+    
+
+}
+
+
+@keyframes renderCards {
+    0% {
+        transform: translateX(-1500px);
+        opacity: 0;
+    }
+    90% {
+        transform: translateX(-1500px);
+        opacity: 0;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes cardDelete {
+    50% {
+        transform: translate(60%, calc(var(--y) + 35px)) scale(1.07) rotate(-5deg);
+        opacity: 1;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: translate(200%, calc(var(--y) - 350px)) scale(0.85) rotate(120deg);
+        opacity: 0.3;
+        animation-timing-function: ease-out;
+    }
+}
+  
+@keyframes cardSwap {
+
+    50% {
+    transform: translate(120%, calc(var(--y) - 225px)) scale(0.80) rotate(45deg);
+    animation-timing-function: ease-in;
+    box-shadow: -10px 20px 60px #00000080;
+
+    }
+    100% {
+    transform: translate(10%, calc(var(--y) - 35px)) scale(0.85);
+    z-index: -1;
+
+    }
+}
+
+
+.car-card.active .car-name, .car-card.active .car-type {
+    transform: translateY(-310px);
+    color: #fff;
+}
+
+.car-card.active .bottom {
+    background-color: transparent; 
+}
+
+.car-card.active .accord {
+    background-color: transparent; 
+}
+
+.car-card.active .outback {
+    background-color: transparent;
+}
+
+.car-card.active .four-runner {
+    background-color: transparent;
+}
+
+.car-card.active .car-name {
+    font-weight: bold;
+    margin-top: 35px;
+    font-size: 40px;
+    line-height: 40px;
+    z-index: 1;
+    transition: var(--long);
+}
+
+.car-card.active .car-type {
+    margin-top: 4px;
+    font-size: 25px;
+    line-height: 25px;
+    z-index: 1;
+    transition: var(--long);
+}
+
+.car-card.active .btn {
+    transform: translate(-50%, 50px);
+    opacity: 1;
+    background: darken(50%);
+}
+
+.car-card.active .car-image {
+    transform: scale(1.5);
+}
+
+.car-card.active .btn-text {
+    transform: translateY(-27px);
+    transition: var(--long);
+}
+
+.car-card.active .cardback {
+    top: 0;
+    background-color: #000000cc;
+}
