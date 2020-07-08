@@ -7,6 +7,7 @@ A vehicle-browsing and personal garage app. This program allows users to search 
 ## Technologies Used
 
 Frontend: Javascript, CSS
+
 Backend: Ruby on Rails
 
 ## Features
