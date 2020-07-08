@@ -12,7 +12,7 @@ Backend: Ruby on Rails
 
 ## Features
 
-Complex CSS organizes users cars into aesthetic cards within their garage.
+Complex CSS organizes user's cars into aesthetic cards within their garage.
 
 Cycle through the cards to view information on the car, including starting price, drivetrain layout, and fuel economy. Click "more information" to be redirected to the car's information page that contains further car attributes.
 
