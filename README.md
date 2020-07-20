@@ -4,6 +4,8 @@ A vehicle-browsing and personal garage app. This program allows users to search 
 
 [![Mod 3 Project - My Garage](https://img.youtube.com/vi/0AJivo6TKII/0.jpg)](https://www.youtube.com/watch?v=0AJivo6TKII)
 
+![My Garage Gif Demo](cars/mod3.gif)
+
 
 ## Technologies Used
 
