@@ -2,7 +2,7 @@
 
 A vehicle-browsing and personal garage app. This program allows users to search for cars, read on their key bits of information, and add them to their garage.
 
-[![Mod 3 Project - My Garage](https://img.youtube.com/vi/0AJivo6TKII/0.jpg)](https://www.youtube.com/watch?v=0AJivo6TKII)
+[![Mod 3 Project - My Garage](https://img.youtube.com/vi/9Fju18Uam10/0.jpg)](https://www.youtube.com/watch?v=0AJivo6TKII)
 
 ![My Garage Gif Demo](cars/mod3.gif)
 
