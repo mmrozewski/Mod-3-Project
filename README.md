@@ -23,6 +23,10 @@ Add a car to the garage or remove one, which will adjust the users garage in the
 
 App contains a very robust vehicle search feature. A user can type anything from "Honda Civic" to "SUV" to "hybrid" and get a list of matches.
 
+## Challenges
+
+This program was my first foray into the terrible world of "CSS Hell"; where my ambitions for how I wanted my project to look had me grinding through hours and hours of painstaking CSS adjustments. The cards and their animations presented the bulk of my time by the time I presented the project to my peers.
+
 ## Future Modifications
 
 Create a strong car recommendation feature. The App will ask a user a series of questions, including their budget, priorities in style, economy, or driving enjoyment, and desired vehicular style. Afterwards, the app will recommend a list of three cars that best suit the user's needs.
